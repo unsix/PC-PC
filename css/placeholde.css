@@ -1,0 +1,195 @@
+@charset "utf-8";
+
+
+#container  .ticket,#container  .scenery{
+
+	color: #666;
+}
+#container .list h2{
+
+	height: 56px;
+	line-height: 56px;
+	font-size: 30px;
+	font-weight: normal;
+	border-bottom: 1px dashed #999;
+}
+#container .ticket .type p{
+	text-indent: 10px;
+	font-size: 24px;
+	margin: 6px;
+}
+#container .ticket .type {
+
+	font-size: 20px;
+	margin: 20px 0 10px 0;
+}
+#container .ticket #form-1 li {
+	list-style: none;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0 10px 0 16px;
+}
+#container .ticket .mark{
+	color: #fff;
+	background-color: #458b00;
+	border-radius: 4px;
+	
+}
+#con-form .con-form{display: none;}
+#con-form .xianshi{display: block;}
+#container .ticket .form {
+
+	font-size: 20px;
+}
+#container .ticket .form p{
+
+	line-height: 3;
+}
+#container .ticket .form input{
+
+	width: 250px;
+	height: 30px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 5px;
+	font-size: 18px;
+	color: #666;
+	margin: 0 0 0 16px;
+}
+#container .ticket .left{
+	width: 43%;
+	display: inline-block;
+}
+#container .ticket .right{
+	width: 43%;
+	display: inline-block;
+}
+#container .ticket .button{
+
+	width:9%;
+	display: inline-block;
+}
+#container .ticket .submit{
+
+	width: 90px;
+	height: 90px;
+	line-height: 90px;
+	border-radius: 4px;
+	background-color: #f60;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	border: none;
+	cursor:pointer;
+	position: relative;
+	top: -28px;
+}
+#container .ticket .new{
+	margin: 20px 0 0 0;
+	font-size: 20px;
+}
+#container .ticket .new p{
+	margin: 15px;
+	font-size: 22px;
+}
+#container .ticket .new ul{
+
+	margin: 20px 0 0 0px;
+	
+}
+#container .ticket .new li {
+
+	display: inline-block;
+	padding: 5px 31px;
+	
+}
+#container .ticket .new li a{
+
+	}
+#container .ticket .new li:first-child{
+
+	
+}
+#container .ticket .new li:hover,#container .ticket .new li a:hover
+{
+
+	background-color: #458b00;
+	border-radius: 4px;
+	color: #fff ;
+}
+#container .ticket .new .active_1{
+	background-color: #458b00;
+	border-radius: 4px;
+	color: #fff ;
+}
+#container table{
+	
+	width: 100%;
+	border-collapse:collapse;
+	margin: 20px 0 0 0;
+	border: 1px solid #ddd;
+	
+	
+}
+
+#container .ticket table th{
+
+	height: 50px;
+	line-height: 50px;
+	font-weight: normal;
+	border-bottom: 1px solid #ddd;
+}
+#container .ticket table td{
+
+	height: 50px;
+	line-height: 50px;
+	text-align:center;
+	border-bottom: 1px solid #eee;
+				
+}
+#container .ticket table tr:nth-child(2n){
+
+	/*background-color: #fafafa;*/
+}
+#container .ticket tr:hover{
+
+	background-color: #eee;
+}
+#container .ticket .price {
+
+	color: #f60;
+}
+#container .ticket .more2{
+
+
+}
+#container .ticket .reserve{
+
+	display: inline-block;
+	width: 80px;
+	height: 35px;
+	line-height: 35px;
+	border-radius: 4px;
+	background-color: #f60;
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+}
+#container .ticket .more2{
+
+	text-align: center;
+	font-size: 18px;
+	margin: 0 auto;
+	cursor: pointer;
+	display: block;
+	color: #666;
+	height: 93px;
+	line-height: 93px;
+	
+	
+	
+}
+#container .ticket .new .con-table{
+	display: none;
+}
+#container .ticket .new .xianshi_1 {display: inline-table;}

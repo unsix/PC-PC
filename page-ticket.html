@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>机票订购</title>
+	<link rel="stylesheet" href="css/baisc.css">
+	<link rel="stylesheet" href="css/column.css">
+	<link rel="stylesheet" href="css/placeholde.css">
+	<link rel="stylesheet" href="css/mian.css">
+	<script src="js/jquery-1.11.1.min.js" ></script>
+	<script src="js/demo.js"></script>
+	
+
+</head>
+
+<body>
+<nav id="nav">
+	<section class="center">
+		<h1 class="logo">飘城旅行社</h1>
+			<ul class="link">
+			<li class="active"><a href="index.html">首页</a></li>
+			<li><a href="page-tour.html">旅游咨询</a></li>
+			<li><a href="page-ticket.html">机票订购</a></li>
+			<li><a href="page-scenery.html">风景欣赏</a></li>
+			<li><a href="page-new.html">公司简介</a></li>
+		</ul>	
+
+	</section>
+</nav>
+<div id="headline">
+	<div class="center">
+		<hgroup>
+			<h2>票务订购</h2>
+			<h3>各种飞机票、火车票、汽车票和轮渡票的订购服务</h3>
+		</hgroup>
+
+	</div>
+</div>
+<div id="container">
+	<aside class="sidebar">
+		<div class="sidebox recommend">
+			<h2>景点推荐</h2>
+			<div class="tag">
+				<ul>
+					<li><a href="###">曼谷(12)</a></li>
+					<li><a href="###">东京(5)</a></li>
+					<li><a href="###">西双版纳(8)</a></li> 
+					<li><a href="###">漓江(16)</a> </li>
+					<li><a href="###">呼伦贝尔(4)</a></li>
+					<li><a href="###">首尔(9)</a> </li>
+					<li><a href="###">巴厘岛(15)</a> </li>
+					<li><a href="###">土耳其(22)</a></li>
+					<li><a href="###">夏威夷(5)</a> </li>
+					<li><a href="###">巴厘岛(11)</a> </li>
+					<li><a href="###">毛里求斯(7)</a></li>
+					<li><a href="###">吉普岛(4)</a></li>
+					<li><a href="###">希腊(18)</a></li>
+					<li><a href="###">法瑞意(8)</a> </li>
+					<li><a href="###">马尔代夫(9)</a> </li>
+					<li><a href="###">新西兰(16)</a></li>
+					<li><a href="###">埃及(11)</a></li>
+					<li><a href="###">迪拜(14)</a> </li>
+					<li><a href="###">斯里兰卡(7)</a> </li>
+					<li><a href="###">麦哈顿(3)</a> </li>
+					<li><a href="###">大阪(15)</a></li>
+				</ul>	
+			 </div> 
+
+
+
+
+		</div>
+
+		<div class="sidebox hot">
+			<h2>热门旅游</h2>
+			<div class="figure">
+			<figure> 
+				<img src="images/hot1.jpg" alt="曼谷-芭提雅 6 日游"> 
+				<figcaption>曼谷-芭提雅 6 日游</figcaption>
+			</figure> 
+			<figure> 
+				<img src="images/hot2.jpg" alt="马尔代夫双鱼 6 日游">
+				<figcaption>马尔代夫双鱼 6 日游</figcaption>
+			</figure> 
+			<figure> 
+				<img src="images/hot3.jpg" alt="海南双飞 5 日游">
+				<figcaption>海南双飞 5 日游</figcaption> 
+			</figure> 
+			<figure> 
+				<img src="images/hot4.jpg" alt="富山大阪东京 8 日游"> 
+				<figcaption>富山大阪东京 8 日游</figcaption> 
+			</figure> 
+			<figure> 
+				<img src="images/hot5.jpg" alt="法瑞意德 12 日游"> 
+				<figcaption>法瑞意德 12 日游</figcaption>
+ 			</figure> 
+ 			<figure> 
+ 				<img src="images/hot6.jpg" alt="巴厘岛 6 日半游"> 
+ 				<figcaption>巴厘岛 6 日半游</figcaption>
+ 			</figure>
+  			<figure> 
+  				<img src="images/hot7.jpg" alt="塞舌尔迪拜 9 日游"> 
+  				<figcaption>塞舌尔迪拜 9 日游</figcaption>
+   			</figure> 
+   			<figure> 
+   				<img src="images/hot8.jpg" alt="花样土耳其 10 日游">
+   				<figcaption>花样土耳其 10 日游</figcaption> 
+   			</figure> 
+   			
+				
+
+			</div>
+			<h2>旅游百宝箱</h2>
+			<div class="box">
+				<a href="###" class="trea1">天气预报</a>
+				<a href="###" class="trea2">火车票查询</a>
+				<a href="###" class="trea3">航空查询</a>
+				<a href="###" class="trea4">地铁线路查询</a>
+			</div>
+		</div>
+	</aside>
+	<div class="list ticket ">
+		<form action="###">
+			<h2>机票预订</h2>
+			<div class="type">
+				<p>航程类型</p>
+				<div id="form-1">
+					
+					<li class="mark">往返</li>
+					<li>单程</li>
+				</div>
+				
+			</div>
+			<div id="con-form">
+				<div class="con-form xianshi">
+					<div class="form left ">
+						<p>
+							<label for="form_city">出发城市</label>
+							<input type="text" name="form_city" id="form_city" placeholder="城市名">
+						</p>
+						<p>
+							<label for="form_city">返回城市</label>	
+							<input type="text" name="to_city" id="to_city" placeholder="城市名">
+						</p>
+					</div>
+					<div class="form right">
+						<p>
+							<label for="form_date" >出发时间</label>
+							<input type="text" name="form_date" placeholder="时间/日期">
+						</p>
+						<p>
+							<label for="to_date">返回时间</label>
+							<input type="text" name="to_date" id="to_date" placeholder="时间/日期">
+						</p>
+					</div>
+				
+					<div class="form button">
+						<p>
+							<button type="submit" class="submit">订票</button>
+						</p>
+					</div>
+				</div>
+				<div class="con-form">
+					<div class="form left ">
+						<p>
+							<label for="form_city">出发城市</label>
+							<input type="text" name="form_city" id="form_city" placeholder="城市名">
+						</p>
+						
+					</div>
+					<div class="form right">
+						<p>
+							<label for="form_date" >出发时间</label>
+							<input type="text" name="form_date" placeholder="时间/日期">
+						</p>
+						
+					</div>
+				
+					<div class="form button">
+						<p>
+							<button type="submit" class="submit">订票</button>
+						</p>
+					</div>
+				</div>
+			</div>
+		</form>
+		<div class="new">
+			<h2>最新机票</h2>
+			<p><a href="###">热门城市：</a></p>
+			<ul id="tab-city">
+				
+				<li ><a>北京</a></li>
+				<li class="active_1"><a>上海</a></li>
+				<li><a>广州</a></li>
+				<li><a>深圳</a></li>
+				<li><a>重庆</a></li>
+				<li><a>成都</a></li>
+				<li><a>杭州</a></li>
+				<li><a>南京</a></li>
+			</ul>
+			<div id="table-tab">
+				<table class="con-table ">
+					<thead>
+						<tr>
+	
+							<th>路线</th>
+							<th>日期</th>
+							<th>价格</th>
+							<th>税费</th>
+							<th>餐宿</th>
+							<th>航班</th>
+							<th>预订</th>
+						</tr>
+					</thead>
+					<tbody >
+						<tr >
+	
+							<td>北京-成都</td>
+							<td>11-25</td>
+							<td class="price">¥768</td>
+							<td>¥50</td>
+							<td>有</td>
+							<td>春秋航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+	
+							<td>北京-上海</td>
+							<td ">11-26</td>
+							<td class="price">¥689</td>
+							<td>¥60</td>
+							<td>无</td>
+							<td>南方航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+							<td>北京-深圳</td>
+							<td>11-26</td>
+							<td class="price">¥568</td>
+							<td>¥52</td>
+							<td>有</td>
+							<td>西部航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+							<td>北京-杭州</td>
+							<td>10-15</td>
+							<td class="price">¥790</td>
+							<td>¥36</td>
+							<td>无</td>
+							<td>天津航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>北京-广州</td>
+							<td>10-15</td>
+							<td class="price">¥667</td>
+							<td>¥44</td>
+							<td>有</td>
+							<td>首都航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>北京-重庆</td>
+							<td>10-15</td>
+							<td class="price">¥466</td>
+							<td>¥62</td>
+							<td>有</td>
+							<td>东方航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>北京-昆明</td>
+							<td>10-15</td>
+							<td class="price">¥509</td>
+							<td>¥35</td>
+							<td>无</td>
+							<td>厦门航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>北京-厦门</td>
+							<td>10-15</td>
+							<td class="price">¥893</td>
+							<td>¥73</td>
+							<td>有</td>
+							<td>深圳航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>北京-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥663</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>北京-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥663</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>北京-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥663</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>北京-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥663</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>北京-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥678</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						</tbody>
+						<tbody id="dp-1">
+							
+						</tbody>
+					<tfoot>
+						<td colspan="7" id="ajax-2"><a href="###" class="more2">加载更多航班...</a></td>
+					</tfoot>
+					
+				</table >
+				<table class="con-table xianshi_1">
+					<thead>
+						<tr>
+	
+							<th>路线</th>
+							<th>日期</th>
+							<th>价格</th>
+							<th>税费</th>
+							<th>餐宿</th>
+							<th>航班</th>
+							<th>预订</th>
+						</tr>
+					</thead>
+					<tbody >
+						<tr >
+	
+							<td>上海-成都</td>
+							<td>11-25</td>
+							<td class="price">¥789</td>
+							<td>¥50</td>
+							<td>有</td>
+							<td>春秋航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+	
+							<td>上海-上海</td>
+							<td ">11-26</td>
+							<td class="price">¥688</td>
+							<td>¥60</td>
+							<td>无</td>
+							<td>南方航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+							<td>上海-深圳</td>
+							<td>11-26</td>
+							<td class="price">¥790</td>
+							<td>¥52</td>
+							<td>有</td>
+							<td>西部航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+							<td>上海-杭州</td>
+							<td>10-15</td>
+							<td class="price">¥660</td>
+							<td>¥36</td>
+							<td>无</td>
+							<td>天津航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>上海-广州</td>
+							<td>10-15</td>
+							<td class="price">¥880</td>
+							<td>¥44</td>
+							<td>有</td>
+							<td>首都航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>上海-重庆</td>
+							<td>10-15</td>
+							<td class="price">¥460</td>
+							<td>¥62</td>
+							<td>有</td>
+							<td>东方航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>上海-昆明</td>
+							<td>10-15</td>
+							<td class="price">¥689</td>
+							<td>¥35</td>
+							<td>无</td>
+							<td>厦门航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>上海-厦门</td>
+							<td>10-15</td>
+							<td class="price">¥893</td>
+							<td>¥73</td>
+							<td>有</td>
+							<td>深圳航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>上海-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥688</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>上海-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥663</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>上海-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥568</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>上海-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥663</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>上海-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥778</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						</tbody>
+						<tbody id="dp-1">
+							
+						</tbody>
+					<tfoot>
+						<td colspan="7" id="ajax-2"><a  class="more2">加载更多航班...</a></td>
+					</tfoot>
+					
+				</table >
+				<table class="con-table">
+					<thead>
+						<tr>
+	
+							<th>路线</th>
+							<th>日期</th>
+							<th>价格</th>
+							<th>税费</th>
+							<th>餐宿</th>
+							<th>航班</th>
+							<th>预订</th>
+						</tr>
+					</thead>
+					<tbody >
+						<tr >
+	
+							<td>广州-成都</td>
+							<td>11-25</td>
+							<td class="price">¥669</td>
+							<td>¥50</td>
+							<td>有</td>
+							<td>春秋航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+	
+							<td>广州-广州</td>
+							<td ">11-26</td>
+							<td class="price">¥880</td>
+							<td>¥60</td>
+							<td>无</td>
+							<td>南方航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+							<td>广州-深圳</td>
+							<td>11-26</td>
+							<td class="price">¥764</td>
+							<td>¥52</td>
+							<td>有</td>
+							<td>西部航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+							<td>广州-杭州</td>
+							<td>10-15</td>
+							<td class="price">¥893</td>
+							<td>¥36</td>
+							<td>无</td>
+							<td>天津航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>广州-广州</td>
+							<td>10-15</td>
+							<td class="price">¥880</td>
+							<td>¥44</td>
+							<td>有</td>
+							<td>首都航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>广州-重庆</td>
+							<td>10-15</td>
+							<td class="price">¥1902</td>
+							<td>¥62</td>
+							<td>有</td>
+							<td>东方航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>广州-昆明</td>
+							<td>10-15</td>
+							<td class="price">¥809</td>
+							<td>¥35</td>
+							<td>无</td>
+							<td>厦门航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>广州-厦门</td>
+							<td>10-15</td>
+							<td class="price">¥1000</td>
+							<td>¥73</td>
+							<td>有</td>
+							<td>深圳航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>广州-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥880</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>广州-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥690</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>广州-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥880</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>广州-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥674</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>广州-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥663</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						</tbody>
+						<tbody id="dp-1">
+							
+						</tbody>
+					<tfoot>
+						<td colspan="7" id="ajax-2"><a href="###" class="more2">加载更多航班...</a></td>
+					</tfoot>
+
+				</table >
+				<table class="con-table">
+					<thead>
+						<tr>
+	
+							<th>路线</th>
+							<th>日期</th>
+							<th>价格</th>
+							<th>税费</th>
+							<th>餐宿</th>
+							<th>航班</th>
+							<th>预订</th>
+						</tr>
+					</thead>
+					<tbody >
+						<tr >
+	
+							<td>深圳-成都</td>
+							<td>11-25</td>
+							<td class="price">¥745</td>
+							<td>¥50</td>
+							<td>有</td>
+							<td>春秋航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+	
+							<td>深圳-深圳</td>
+							<td ">11-26</td>
+							<td class="price">¥688</td>
+							<td>¥60</td>
+							<td>无</td>
+							<td>南方航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+							<td>深圳-深圳</td>
+							<td>11-26</td>
+							<td class="price">¥561</td>
+							<td>¥52</td>
+							<td>有</td>
+							<td>西部航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+							<td>深圳-杭州</td>
+							<td>10-15</td>
+							<td class="price">¥378</td>
+							<td>¥36</td>
+							<td>无</td>
+							<td>天津航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>深圳-深圳</td>
+							<td>10-15</td>
+							<td class="price">¥612</td>
+							<td>¥44</td>
+							<td>有</td>
+							<td>首都航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>深圳-重庆</td>
+							<td>10-15</td>
+							<td class="price">¥689</td>
+							<td>¥62</td>
+							<td>有</td>
+							<td>东方航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>深圳-昆明</td>
+							<td>10-15</td>
+							<td class="price">¥509</td>
+							<td>¥35</td>
+							<td>无</td>
+							<td>厦门航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>深圳-厦门</td>
+							<td>10-15</td>
+							<td class="price">¥893</td>
+							<td>¥73</td>
+							<td>有</td>
+							<td>深圳航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>深圳-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥663</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>深圳-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥785</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>深圳-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥880</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>深圳-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥1023</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>深圳-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥763</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						</tbody>
+						<tbody id="dp-1">
+							
+						</tbody>
+					<tfoot>
+						<td colspan="7" id="ajax-2"><a href="###" class="more2">加载更多航班...</a></td>
+					</tfoot>
+				</table >
+					<table class="con-table">
+					<thead>
+						<tr>
+	
+							<th>路线</th>
+							<th>日期</th>
+							<th>价格</th>
+							<th>税费</th>
+							<th>餐宿</th>
+							<th>航班</th>
+							<th>预订</th>
+						</tr>
+					</thead>
+					<tbody >
+						<tr >
+	
+							<td>重庆-成都</td>
+							<td>11-25</td>
+							<td class="price">¥745</td>
+							<td>¥50</td>
+							<td>有</td>
+							<td>春秋航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+	
+							<td>重庆-重庆</td>
+							<td ">11-26</td>
+							<td class="price">¥658</td>
+							<td>¥60</td>
+							<td>无</td>
+							<td>南方航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+							<td>重庆-重庆</td>
+							<td>11-26</td>
+							<td class="price">¥781</td>
+							<td>¥52</td>
+							<td>有</td>
+							<td>西部航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+							<td>重庆-杭州</td>
+							<td>10-15</td>
+							<td class="price">¥568</td>
+							<td>¥36</td>
+							<td>无</td>
+							<td>天津航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>重庆-重庆</td>
+							<td>10-15</td>
+							<td class="price">¥642</td>
+							<td>¥44</td>
+							<td>有</td>
+							<td>首都航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>重庆-重庆</td>
+							<td>10-15</td>
+							<td class="price">¥1228</td>
+							<td>¥62</td>
+							<td>有</td>
+							<td>东方航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>重庆-昆明</td>
+							<td>10-15</td>
+							<td class="price">¥809</td>
+							<td>¥35</td>
+							<td>无</td>
+							<td>厦门航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>重庆-厦门</td>
+							<td>10-15</td>
+							<td class="price">¥893</td>
+							<td>¥73</td>
+							<td>有</td>
+							<td>重庆航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>重庆-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥963</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>重庆-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥763</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>重庆-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥763</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>重庆-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥663</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>重庆-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥563</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						</tbody>
+						<tbody id="dp-1">
+							
+						</tbody>
+					<tfoot>
+						<td colspan="7" id="ajax-2"><a href="###" class="more2">加载更多航班...</a></td>
+					</tfoot>
+				</table >
+					<table class="con-table">
+					<thead>
+						<tr>
+	
+							<th>路线</th>
+							<th>日期</th>
+							<th>价格</th>
+							<th>税费</th>
+							<th>餐宿</th>
+							<th>航班</th>
+							<th>预订</th>
+						</tr>
+					</thead>
+					<tbody >
+						<tr >
+	
+							<td>成都-成都</td>
+							<td>11-25</td>
+							<td class="price">¥645</td>
+							<td>¥50</td>
+							<td>有</td>
+							<td>春秋航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+	
+							<td>成都-成都</td>
+							<td ">11-26</td>
+							<td class="price">¥788</td>
+							<td>¥60</td>
+							<td>无</td>
+							<td>南方航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+							<td>成都-成都</td>
+							<td>11-26</td>
+							<td class="price">¥761</td>
+							<td>¥52</td>
+							<td>有</td>
+							<td>西部航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+							<td>成都-杭州</td>
+							<td>10-15</td>
+							<td class="price">¥678</td>
+							<td>¥36</td>
+							<td>无</td>
+							<td>天津航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>成都-成都</td>
+							<td>10-15</td>
+							<td class="price">¥912</td>
+							<td>¥44</td>
+							<td>有</td>
+							<td>首都航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>成都-成都</td>
+							<td>10-15</td>
+							<td class="price">¥628</td>
+							<td>¥62</td>
+							<td>有</td>
+							<td>东方航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>成都-昆明</td>
+							<td>10-15</td>
+							<td class="price">¥689</td>
+							<td>¥35</td>
+							<td>无</td>
+							<td>厦门航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>成都-厦门</td>
+							<td>10-15</td>
+							<td class="price">¥673</td>
+							<td>¥73</td>
+							<td>有</td>
+							<td>成都航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>成都-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥783</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>成都-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥633</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>成都-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥873</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>成都-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥883</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>成都-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥663</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						</tbody>
+						<tbody id="dp-1">
+							
+						</tbody>
+					<tfoot>
+						<td colspan="7" id="ajax-2"><a href="###" class="more2">加载更多航班...</a></td>
+					</tfoot>
+				</table >
+				<table class="con-table">
+					<thead>
+						<tr>
+	
+							<th>路线</th>
+							<th>日期</th>
+							<th>价格</th>
+							<th>税费</th>
+							<th>餐宿</th>
+							<th>航班</th>
+							<th>预订</th>
+						</tr>
+					</thead>
+					<tbody >
+						<tr >
+	
+							<td>香港-香港</td>
+							<td>11-25</td>
+							<td class="price">¥355</td>
+							<td>¥50</td>
+							<td>有</td>
+							<td>春秋航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+	
+							<td>香港-香港</td>
+							<td ">11-26</td>
+							<td class="price">¥678</td>
+							<td>¥60</td>
+							<td>无</td>
+							<td>南方航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+							<td>香港-香港</td>
+							<td>11-26</td>
+							<td class="price">¥781</td>
+							<td>¥52</td>
+							<td>有</td>
+							<td>西部航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+							<td>香港-香港</td>
+							<td>10-15</td>
+							<td class="price">¥678</td>
+							<td>¥36</td>
+							<td>无</td>
+							<td>天津航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>香港-香港</td>
+							<td>10-15</td>
+							<td class="price">¥452</td>
+							<td>¥44</td>
+							<td>有</td>
+							<td>首都航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>香港-香港</td>
+							<td>10-15</td>
+							<td class="price">¥878</td>
+							<td>¥62</td>
+							<td>有</td>
+							<td>东方航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>香港-昆明</td>
+							<td>10-15</td>
+							<td class="price">¥969</td>
+							<td>¥35</td>
+							<td>无</td>
+							<td>厦门航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>香港-厦门</td>
+							<td>10-15</td>
+							<td class="price">¥563</td>
+							<td>¥73</td>
+							<td>有</td>
+							<td>香港航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>香港-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥563</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>香港-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥623</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>香港-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥623</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>香港-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥663</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>香港-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥563</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						</tbody>
+						<tbody id="dp-1">
+							
+						</tbody>
+					<tfoot>
+						<td colspan="7" id="ajax-2"><a href="###" class="more2">加载更多航班...</a></td>
+					</tfoot>
+				</table >
+					<table class="con-table">
+					<thead>
+						<tr>
+	
+							<th>路线</th>
+							<th>日期</th>
+							<th>价格</th>
+							<th>税费</th>
+							<th>餐宿</th>
+							<th>航班</th>
+							<th>预订</th>
+						</tr>
+					</thead>
+					<tbody >
+						<tr >
+	
+							<td>澳门-澳门</td>
+							<td>11-25</td>
+							<td class="price">¥745</td>
+							<td>¥50</td>
+							<td>有</td>
+							<td>春秋航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+	
+							<td>澳门-澳门</td>
+							<td ">11-26</td>
+							<td class="price">¥458</td>
+							<td>¥60</td>
+							<td>无</td>
+							<td>南方航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+							<td>澳门-澳门</td>
+							<td>11-26</td>
+							<td class="price">¥531</td>
+							<td>¥52</td>
+							<td>有</td>
+							<td>西部航空</td>
+							<td><a href="###" class="reserve">预订</a></td>
+						</tr>
+						<tr>
+							<td>澳门-澳门</td>
+							<td>10-15</td>
+							<td class="price">¥788</td>
+							<td>¥36</td>
+							<td>无</td>
+							<td>天津航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>澳门-澳门</td>
+							<td>10-15</td>
+							<td class="price">¥672</td>
+							<td>¥44</td>
+							<td>有</td>
+							<td>首都航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>澳门-澳门</td>
+							<td>10-15</td>
+							<td class="price">¥568</td>
+							<td>¥62</td>
+							<td>有</td>
+							<td>东方航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>澳门-昆明</td>
+							<td>10-15</td>
+							<td class="price">¥889</td>
+							<td>¥35</td>
+							<td>无</td>
+							<td>厦门航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>澳门-厦门</td>
+							<td>10-15</td>
+							<td class="price">¥1293</td>
+							<td>¥73</td>
+							<td>有</td>
+							<td>澳门航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>澳门-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥693</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>澳门-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥453</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>澳门-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥703</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>澳门-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥883</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						<tr>
+							<td>澳门-长沙</td>
+							<td>10-15</td>
+							<td class="price">¥563</td>
+							<td>¥46</td>
+							<td>无</td>
+							<td>四川航空</td>
+							<td><a href="###" class="reserve">预定</a></td>
+						</tr>
+						</tbody>
+						<tbody id="dp-1">
+							
+						</tbody>
+					<tfoot>
+						<td colspan="7" id="ajax-2"><a href="###" class="more2">加载更多航班...</a></td>
+					</tfoot>
+				</table >
+			
+			</div>
+
+		
+		</div>
+	</div>
+</div>
+<div  style="clear: both;"></div>
+<footer id="footer">
+	<div class="top">
+		<div class="left block">
+			<h2>合作伙伴</h2>
+			<hr>
+			<ul>途牛旅游网</ul>
+			<ul>驴妈妈旅游网</ul>
+			<ul>携程旅游</ul>
+			<ul>中国青年旅行社</ul>
+		</div>
+		<div class="center block">
+			<h2>旅游FAQ</h2>
+			<hr>
+			<ul>旅游合同签订方式？</ul>
+			<ul>儿童价基本什么规定的？</ul>
+			<ul>旅游的线路是怎么界定的</ul>
+			<ul>单向差是什么</ul>
+			<ul>旅游保险有哪些种类</ul>
+	
+		</div>
+		<div class="right block">
+			<h2>联系方式</h2>
+			<hr>
+			<ul>微博：webkit.com/ycku/ul>
+			<ul>邮件：ycku@ycku.com</ul>
+			<ul>d地址：天上人间</ul>
+			
+		</div>
+	</div>
+	<div class="buttom">copyright ©YCKU 飘城旅行社| 苏ICP 备120110119 号|旅行社经营许可证：L-YC-BK12345 </div>
+</footer>
+	
+</body>
+</html>
